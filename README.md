@@ -2,6 +2,8 @@
 Using a Gaussian Mixture Model to cluster consumer data.
 ## Mall Customer Segmentation - Python
 Python Jupyter Notebook that loads in raw tabular data containing features from mall customers. The notebook leverages advanced probabilistic modeling techniques like Gaussian Model Mixtures to train several models and evaluate model performance and identified clusters. The model undergoes cluster analysis, where domain-specific insights and patterns are extrapolated from model outputs.
+### Data Resource - Kaggle
+The dataset was sourced from Kaggle. Click [here](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python/data) for access to the dataset.
 ### Method
 The data is first loaded using the pandas library. The data is preprocessed and assessed for building the model. After processing, the data is scaled to properly train the model. The next step is to create a baseline Gaussian mixture model using standard configurations. This is so that we can assess the effectiveness of advanced clustering techniques against baseline models. Using Scikit-Learn, a basic GMM is trained to cluster the data. Next, train an advanced GMM with more in-depth configurations. In this project, I use BIC (Bayesian Inference Criterion) to identify the number of components hyperparameter for my model. This is comparable to using the elbow method in K-Means clustering. The models are evaluated using log-likelihood, BIC, and AIC (Akaike Information Criterion) to measure clustering performance. These metrics are used to compare the performance of the completed model against the baseline model. Finally, the completed model is undergoes cluster analysis, where real-world patterns, insights, and conclusions are made using the model groupings.
 
